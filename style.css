@@ -34,6 +34,15 @@ p {
     color: black;
 }
 
+footer {
+    background-color: #EFD5BF;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
 
 /*---- Menuknap ------ */
 
@@ -45,7 +54,6 @@ p {
     top: -0.5vw;
     left: 0vw;
 }
-
 
 header {
     width: 100vw;
@@ -60,13 +68,13 @@ header nav {
 
 }
 
-
 header nav a {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
-}
+    font-family: 'lato';
 
+}
 
 header a {
     padding: 0.5rem;
@@ -74,8 +82,12 @@ header a {
     color: black;
 }
 
-
 header nav a:visited {
+    color: #F7A152;
+}
+
+/* mouse over link */
+header nav a:hover {
     color: black;
 }
 
@@ -99,7 +111,6 @@ header nav a:visited {
 
 }
 
-
 /*---- Forside ------ */
 
 #splash {
@@ -122,11 +133,19 @@ header nav a:visited {
 
 
 
+
+
+
+
+
 /*---- Om ------ */
 
-.col h2 {
-    left: 45vw;
-    bottom: 5vw;
+#om .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    border-bottom: solid #EFD5BF;
+    border-top: solid #EFD5BF;
 }
 
 .col p {
@@ -136,12 +155,113 @@ header nav a:visited {
     margin-left: -15px;
     text-align: center;
     margin: 2vw;
-    padding: 5vw;
+    padding: 1vw;
 
 }
+
+#om .col {
+    flex-grow: 1;
+    flex-basis: 300px;
+    padding: 1rem;
+}
+
+#om .col_wide {
+    flex-grow: 1;
+    flex-basis: 300px;
+    padding: 1rem;
+}
+
+#om h2 {
+    margin: 0.1rem auto;
+    text-align: center;
+}
+
+#kompetencer .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+#kompetencer .col {
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+#kompetencer h2 {
+    margin: 0.1rem auto;
+    text-align: center;
+}
+
+#kompetencer h3 {
+    margin: 0.1rem auto;
+    text-align: center;
+}
+
+#kompetencer li {
+    margin: 0.1rem auto;
+    text-align: center, justify-all;
+
+}
+
 
 /*---- Portfolio ------ */
 
 
 
 /*---- Kontakt ------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---- Media indstillinger ------ */
+
+@media only screen and (min-width:800px) {
+
+    #menuknap {
+        display: none;
+    }
+
+    .hidden {
+        transform: translateX(0);
+        opacity: 1;
+        display: inline-block;
+    }
+
+    header li {
+        display: inline-block;
+        letter-spacing: 1px;
+
+    }
+
+    header nav {
+        padding: 0.1rem;
+    }
+
+
+    header nav li {
+        padding: 0.3rem;
+        background-color: transparent;
+        margin: 0.8rem;
+        text-decoration: none;
+        color: black;
+    }
+
+
+}
