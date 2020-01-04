@@ -1,0 +1,147 @@
+/*---- Generelle indstillinger ------ */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-family: 'roboto', sans-serif;
+    font-size: 3rem;
+}
+
+h2 {
+    font-family: 'roboto', sans-serif;
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: 'lato';
+    font-size: 1.6rem;
+    color: black;
+}
+
+p {
+    font-family: 'Cormorant', serif;
+    color: black;
+}
+
+
+/*---- Menuknap ------ */
+
+#logo {
+    height: 7vw;
+    width: 14vw;
+    background-size: cover;
+    position: absolute;
+    top: -0.5vw;
+    left: 0vw;
+}
+
+
+header {
+    width: 100vw;
+    background-color: white;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+
+header nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+header a {
+    padding: 0.5rem;
+    display: flex;
+    color: black;
+}
+
+
+header nav a:visited {
+    color: black;
+}
+
+.hidden {
+    transform: translateX(-100%);
+    opacity: 0;
+    display: none;
+}
+
+#menuknap {
+    display: inline-block;
+    color: black;
+    margin: 0.5rem;
+}
+
+@media only screen and (min-width:600px) {
+    header nav {
+
+        padding-bottom: 5rem;
+    }
+
+}
+
+
+/*---- Forside ------ */
+
+#splash {
+    width: 100vw;
+    height: 100vh;
+    background-image: url();
+    background-size: cover;
+    background-position: 67% 10%;
+    max-width: none;
+}
+
+.splash_txt {
+    position: absolute;
+    text-align: left;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: #F7A152;
+}
+
+
+
+/*---- Om ------ */
+
+.col h2 {
+    left: 45vw;
+    bottom: 5vw;
+}
+
+.col p {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-left: -15px;
+    text-align: center;
+    margin: 2vw;
+    padding: 5vw;
+
+}
+
+/*---- Portfolio ------ */
+
+
+
+/*---- Kontakt ------ */
