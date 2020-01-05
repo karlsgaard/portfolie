@@ -48,12 +48,16 @@ footer {
 }
 */
 
-#footer {
-    background-color: #606060;
+footer {
+    text-align: center;
+    border-top: 0.5rem solid #606060;
 }
 
 #footer .sectionwrapper {
     display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -63,23 +67,17 @@ footer {
 
 footer .insta {
     background-size: cover;
-    height: 5.3vw;
-    width: 5.2vw;
+    height: 4vw;
+    width: 4vw;
 }
 
 footer .linkedin {
     background-size: cover;
-    height: 5.3vw;
-    width: 5.2vw;
+    height: 4vw;
+    width: 4vw;
     text-align: center;
 
 
-}
-
-.andcopy {
-    color: white;
-    text-align: center;
-    padding: 1rem;
 }
 
 /*---- Menuknap ------ */
@@ -240,8 +238,34 @@ header nav a:hover {
 
 }
 
+/*---- udvalgte projekter ------ */
+
+#udvalgte_projekter .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#udvalgte_projekter .col {
+    flex-grow: 1;
+    flex-basis: 400px;
+    margin: 1rem 0.5rem;
+}
+
+#udvalgte_projekter h2 {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+
 
 /*---- Portfolio ------ */
+
+
+
 
 
 
