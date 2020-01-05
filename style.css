@@ -19,7 +19,8 @@ h1 {
 }
 
 h2 {
-    font-family: 'roboto', sans-serif;
+    font-family: 'roboto',
+        sans-serif;
     font-size: 2rem;
 }
 
@@ -30,10 +31,13 @@ h3 {
 }
 
 p {
-    font-family: 'Cormorant', serif;
+    font-family: 'Montserrat', sans-serif;
     color: black;
 }
 
+/*---- footer ------ */
+
+/*
 footer {
     background-color: #EFD5BF;
     left: 0;
@@ -42,7 +46,41 @@ footer {
     text-align: center;
     letter-spacing: 1px;
 }
+*/
 
+#footer {
+    background-color: #606060;
+}
+
+#footer .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#footer .some {
+    display: flex;
+}
+
+footer .insta {
+    background-size: cover;
+    height: 5.3vw;
+    width: 5.2vw;
+}
+
+footer .linkedin {
+    background-size: cover;
+    height: 5.3vw;
+    width: 5.2vw;
+    text-align: center;
+
+
+}
+
+.andcopy {
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
 
 /*---- Menuknap ------ */
 
@@ -114,11 +152,11 @@ header nav a:hover {
 /*---- Forside ------ */
 
 #splash {
-    width: 100vw;
-    height: 100vh;
-    background-image: url();
+    width: 50vw;
+    height: 80vh;
+    /*    background-image: url(assets/logo_IK.svg);*/
     background-size: cover;
-    background-position: 67% 10%;
+    /*    background-position: 80% 40%;*/
     max-width: none;
 }
 
@@ -131,21 +169,14 @@ header nav a:hover {
     color: #F7A152;
 }
 
-
-
-
-
-
-
-
 /*---- Om ------ */
 
 #om .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
     margin-top: 1rem;
-    border-bottom: solid #EFD5BF;
-    border-top: solid #EFD5BF;
+    border-bottom: solid #606060;
+    border-top: solid #606060;
 }
 
 .col p {
@@ -216,19 +247,19 @@ header nav a:hover {
 
 /*---- Kontakt ------ */
 
+#kontakt .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+#kontakt .col {
+    flex-grow: 1;
+    flex-basis: 200px;
+    margin: 50px;
+    padding: 0px;
+    padding-left: 15px;
+}
 
 /*---- Media indstillinger ------ */
 
