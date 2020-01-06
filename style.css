@@ -40,6 +40,10 @@ li {
     color: black;
 }
 
+a {
+    color:
+}
+
 /*---- footer ------ */
 
 /*
@@ -282,26 +286,30 @@ header nav a:hover {
 
 }
 
-
-
-
-
-
-
 /*---- Portfolio ------ */
 
+/*
 portfolio .sectionwrapper {
     flex-wrap: wrap;
     display: flex;
+    position: absolute;
+    top: 60px;
+    bottom: 60px;
+    left: 50px;
+    right: 50px;
+    box-sizing: border-box;
+    overflow: scroll;
+    z-index: 1;
 }
 
-portfolio .img_wrap {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    font-size: 0;
+portfolio .col {
 
+    flex-grow: 1;
+    flex-basis: 400px;
+    margin-bottom: 1rem;
+    margin-right: 0.5rem;
 }
+
 
 .tekst {
     text-align: center;
@@ -310,6 +318,51 @@ portfolio .img_wrap {
     opacity: 1;
     flex-direction: column;
     justify-content: center;
+}
+*/
+
+section {
+    background-color: rgba(245, 245, 245, 0.3);
+
+}
+
+#portfolie {
+    margin-bottom: 20px;
+
+}
+
+div {
+    position: relative;
+}
+
+.tekst {
+    text-align: center;
+    z-index: 10;
+    opacity: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tekst_laptop {
+    display: none;
+}
+
+
+.img_wrap {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    font-size: 0;
+}
+
+.tekst_laptop {
+    display: block;
+}
+
+#portfolio {
+    margin: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 /*---- tema 2 ------ */
@@ -503,7 +556,6 @@ img {
         padding: 0.1rem;
     }
 
-
     header nav li {
         padding: 0.3rem;
         background-color: transparent;
@@ -511,6 +563,21 @@ img {
         text-decoration: none;
         color: black;
     }
+}
 
+/*---- Media portfolio ------ */
 
+media only screen and (min-width: 992px) .tekst_laptop {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 992px) .tekst {
+    padding: 30px;
+}
+
+@media only screen and (min-width: 667px) {
+    portfolio {
+        margin: 0 14%;
+    }
 }
