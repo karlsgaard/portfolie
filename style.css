@@ -503,6 +503,7 @@ img {
 
 /*---- Kontakt ------ */
 
+/*
 #kontakt .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
@@ -510,6 +511,7 @@ img {
     background-color: #606060;
     margin: 10rem;
 }
+*/
 
 #kontakt .col {
     flex-grow: 1;
@@ -520,17 +522,58 @@ img {
 }
 
 #kontakt h3 {
-    color: white;
+    color: black;
     justify-content: center;
     text-align: center;
 
 }
 
 #kontakt p {
-    color: white;
+    color: black;
     justify-content: center;
     text-align: center;
 }
+
+#kontakt {
+    padding: 20px 0;
+    background-color: white;
+}
+
+#kontakt p {
+    font-size: 0.9em;
+}
+
+#kontakt .col {
+    flex-grow: 1;
+    flex-basis: 200px;
+    margin: 50px;
+    padding-left: 15px;
+}
+
+#kontakt .col img {
+    max-width: 25px;
+    margin: 0 5px -3px 5px;
+}
+
+.col a {
+    text-decoration: none;
+    color: #000000;
+    text-transform: none;
+}
+
+.col a:hover {
+    text-decoration: none;
+    color: #F7A152;
+}
+
+#kontakt .sectionwrapper {
+    /*display: flex;*/
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
 
 /*---- Media indstillinger ------ */
 
