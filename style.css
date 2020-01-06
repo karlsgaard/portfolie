@@ -35,6 +35,11 @@ p {
     color: black;
 }
 
+li {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
 /*---- footer ------ */
 
 /*
@@ -76,8 +81,11 @@ footer .linkedin {
     height: 4vw;
     width: 4vw;
     text-align: center;
+}
 
-
+footer .andcopy {
+    color: #F7A152;
+    margin: 1rem;
 }
 
 /*---- Menuknap ------ */
@@ -177,7 +185,7 @@ header nav a:hover {
     border-top: solid #606060;
 }
 
-.col p {
+#om .col p {
     display: flex;
     flex-wrap: wrap;
     margin-right: -30px;
@@ -192,6 +200,7 @@ header nav a:hover {
     flex-grow: 1;
     flex-basis: 300px;
     padding: 1rem;
+
 }
 
 #om .col_wide {
@@ -205,25 +214,25 @@ header nav a:hover {
     text-align: center;
 }
 
+/*---- kompetencer ------ */
+
 #kompetencer .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
     margin-top: 1rem;
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    margin-right: 3rem;
+    margin-left: 3rem;
 
 }
 
 #kompetencer .col {
-    flex-basis: 300px;
+    flex-basis: 500px;
     flex-grow: 1;
 }
 
 #kompetencer h2 {
-    margin: 0.1rem auto;
+    margin: 0.3rem auto;
     text-align: center;
 }
 
@@ -238,6 +247,10 @@ header nav a:hover {
 
 }
 
+.col_tekst {
+    margin: 1rem;
+}
+
 /*---- udvalgte projekter ------ */
 
 #udvalgte_projekter .sectionwrapper {
@@ -248,12 +261,25 @@ header nav a:hover {
 #udvalgte_projekter .col {
     flex-grow: 1;
     flex-basis: 400px;
-    margin: 1rem 0.5rem;
+    margin-bottom: 1rem;
+    margin-right: 0.5rem;
 }
 
 #udvalgte_projekter h2 {
     text-decoration: none;
     color: black;
+    text-align: center !important;
+    margin-left: auto !important;
+    border-top: 0.1rem solid #606060;
+    margin: 1rem;
+    margin-top:
+}
+
+#udvalgte_projekter .udvalgte_projekter_txt {
+    text-align: center !important;
+    margin-left: auto !important;
+
+
 }
 
 
@@ -264,9 +290,162 @@ header nav a:hover {
 
 /*---- Portfolio ------ */
 
+portfolio .sectionwrapper {
+    flex-wrap: wrap;
+    display: flex;
+}
+
+portfolio .img_wrap {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    font-size: 0;
+
+}
+
+.tekst {
+    text-align: center;
+    z-index: 10;
+    background-color: white;
+    opacity: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*---- tema 2 ------ */
+
+#tema_2 .tekst {
+    border-top: solid #606060;
+}
+
+#tema_2 .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#tema_2 .col {
+    flex-grow: 1;
+    flex-basis: 300px;
+    margin: 1rem 0.5rem;
+    text-align: left;
+    margin: 1rem;
+}
+
+#tema_2 .upper_col {
+    margin: 1rem;
+    text-align: center;
+}
+
+/*---- tema 3 ------ */
+
+#tema_3 .tekst {
+    border-top: solid #606060;
+}
+
+#tema_3 .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#tema_3 .col {
+    flex-grow: 1;
+    flex-basis: 300px;
+    margin: 1rem 0.5rem;
+    text-align: left;
+    margin: 1rem;
+}
+
+#tema_3 .upper_col {
+    margin: 1rem;
+    text-align: center;
+
+}
+
+/*---- tema 4 ------ */
+
+#tema_4 .tekst {
+    border-top: solid #606060;
+}
+
+#tema_4 .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#tema_4 .col {
+    flex-grow: 1;
+    flex-basis: 300px;
+    margin: 1rem 0.5rem;
+    text-align: left;
+    margin: 1rem;
+}
+
+#tema_4 .upper_col {
+    text-align: center;
+}
+
+/*---- tema 5 ------ */
+
+#tema_5 .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
 
 
+}
 
+#tema_5 .tekst {
+    border-top: solid #606060;
+}
+
+
+#tema_5 .col {
+    flex-grow: 1;
+    flex-basis: 300px;
+    margin: 1rem 0.5rem;
+    text-align: left;
+    margin: 1rem;
+}
+
+#tema_5 .upper_col {
+    margin: 1rem;
+    text-align: center;
+}
+
+/*---- tema 5 scroll ------ */
+
+
+#container1 {
+
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    width: 100%;
+    /*    scroll-snap-points-x: repeat(100%);*/
+    scroll-snap-type: x mandatory;
+}
+
+img {
+    width: 100%;
+    scroll-snap-align: start;
+}
+
+/*---- tema 5 video ------ */
+.promo_video {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    padding: 1rem;
+
+}
+
+.promo_video video {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
 
 
 /*---- Kontakt ------ */
@@ -275,6 +454,8 @@ header nav a:hover {
     display: flex;
     flex-wrap: wrap;
     margin-top: 2rem;
+    background-color: #606060;
+    margin: 10rem;
 }
 
 #kontakt .col {
@@ -283,6 +464,19 @@ header nav a:hover {
     margin: 50px;
     padding: 0px;
     padding-left: 15px;
+}
+
+#kontakt h3 {
+    color: white;
+    justify-content: center;
+    text-align: center;
+
+}
+
+#kontakt p {
+    color: white;
+    justify-content: center;
+    text-align: center;
 }
 
 /*---- Media indstillinger ------ */
