@@ -146,7 +146,7 @@ header nav a:visited {
 
 /* mouse over link */
 header nav a:hover {
-    color: black;
+    color: #F7A152;
 }
 
 .hidden {
@@ -183,10 +183,14 @@ header nav a:hover {
 .splash_txt {
     position: absolute;
     text-align: left;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
+    top: 70%;
+    left: 18%;
+    transform: translateY(-70%) translateX(-20%);
     color: #F7A152;
+}
+
+#splash a {
+    font-size: 2rem;
 }
 
 /*---- Om ------ */
@@ -256,7 +260,6 @@ header nav a:hover {
 
 #kompetencer li {
     margin: 0.1rem auto;
-    text-align: center, justify-all;
 
 }
 
@@ -266,6 +269,7 @@ header nav a:hover {
 
 /*---- udvalgte projekter ------ */
 
+/*
 #udvalgte_projekter .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
@@ -294,6 +298,7 @@ header nav a:hover {
 
 
 }
+*/
 
 /*---- Portfolio ------ */
 
@@ -465,6 +470,30 @@ section {
     scroll-snap-type: x mandatory;
 }
 
+
+#container2 {
+
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    width: 100%;
+    /*    scroll-snap-points-x: repeat(100%);*/
+    scroll-snap-type: x mandatory;
+}
+
+
+#container3 {
+
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    width: 100%;
+    /*    scroll-snap-points-x: repeat(100%);*/
+    scroll-snap-type: x mandatory;
+}
+
 img {
     width: 100%;
     scroll-snap-align: start;
@@ -598,17 +627,23 @@ img {
 
 /*---- Media portfolio ------ */
 
-media only screen and (min-width: 992px) .tekst_laptop {
-    display: flex;
-    flex-wrap: wrap;
+@media only screen and (min-width: 992px) {
+    .tekst_laptop {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
-@media only screen and (min-width: 992px) .tekst {
-    padding: 30px;
+@media only screen and (min-width: 992px) {
+    #tekst {
+        padding: 30px;
+    }
 }
 
 @media only screen and (min-width: 667px) {
     portfolio {
-        margin: 0 14%;
+        display: flex;
+        flex-wrap: wrap;
+
     }
 }
