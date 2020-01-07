@@ -41,7 +41,9 @@ li {
 }
 
 a {
-    color:
+    color: #F7A152;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 /*---- footer ------ */
@@ -329,10 +331,6 @@ section {
 #portfolie {
     margin-bottom: 20px;
 
-}
-
-div {
-    position: relative;
 }
 
 .tekst {

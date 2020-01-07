@@ -20,7 +20,6 @@ function toggleMenu() {
     }
 }
 
-
 function logoClick() {
     console.log("logoclick");
     document.querySelector("#logo").addEventListener("click", visForside);
@@ -28,7 +27,5 @@ function logoClick() {
 
 function visForside() {
     console.log("visForside");
-
-
 
 }
