@@ -211,14 +211,14 @@ header nav a:hover {
 
 #om .col {
     flex-grow: 1;
-    flex-basis: 300px;
+    flex-basis: 400px;
     padding: 1rem;
 
 }
 
 #om .col_wide {
-    flex-grow: 1;
-    flex-basis: 300px;
+    flex-grow: 2;
+    flex-basis: 400px;
     padding: 1rem;
 }
 
@@ -490,22 +490,23 @@ img {
 
 /*---- Kontakt ------ */
 
-/*
 #kontakt .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 2rem;
-    background-color: #606060;
-    margin: 10rem;
+    margin-top: 1rem;
 }
-*/
 
 #kontakt .col {
     flex-grow: 1;
+    flex-basis: 400px;
+    padding: 1rem;
+
+}
+
+#kontakt .col_wide {
+    flex-grow: 2;
     flex-basis: 200px;
-    margin: 50px;
-    padding: 0px;
-    padding-left: 15px;
+    padding: 1rem;
 }
 
 #kontakt h3 {
