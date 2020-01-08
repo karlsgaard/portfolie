@@ -178,7 +178,7 @@ header nav a:hover {
 }
 
 #splash h1 {
-    font-size: 5rem;
+    font-size: 3rem;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -570,6 +570,7 @@ img {
     color: black;
     justify-content: center;
     text-align: center;
+    border-bottom: 1px solid;
 
 }
 
@@ -590,7 +591,7 @@ img {
 
 #kontakt .col {
     flex-grow: 1;
-    flex-basis: 200px;
+    flex-basis: 300px;
     padding-left: 15px;
 }
 
