@@ -47,17 +47,6 @@ a {
 
 /*---- footer ------ */
 
-/*
-footer {
-    background-color: #EFD5BF;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    letter-spacing: 1px;
-}
-*/
-
 footer {
     text-align: center;
     border-top: 0.5rem solid #545646;
@@ -182,9 +171,15 @@ header nav a:hover {
     position: absolute;
     text-align: left;
     top: 70%;
-    left: 18%;
+    left: 20%;
     transform: translateY(-70%) translateX(-20%);
     color: #F7A152;
+    flex-wrap: wrap;
+}
+
+#splash h1 {
+    font-size: 5rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #splash a {
