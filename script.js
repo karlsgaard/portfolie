@@ -22,16 +22,3 @@ function logoClick() {
     console.log("logoclick");
     document.querySelector("#logo").addEventListener("click", visForside);
 }
-
-function visForside() {
-    console.log("visForside");
-
-}
-
-function openNav() {
-    document.getElementById("myNav").style.width = "100%";
-}
-
-function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
-}
