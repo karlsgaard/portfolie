@@ -117,7 +117,8 @@ header nav a {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
-    font-family: 'lato';
+    /*    font-family: 'lato';*/
+    font-family: 'Montserrat', sans-serif;
 
 }
 
