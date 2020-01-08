@@ -100,8 +100,6 @@ footer .andcopy {
     margin: 1rem;
 }
 
-
-
 /*---- Menuknap ------ */
 
 #logo {
@@ -215,7 +213,7 @@ header nav a:hover {
 
 #om .col {
     flex-grow: 1;
-    flex-basis: 400px;
+    flex-basis: 600px;
     padding: 1rem;
 
 }
@@ -356,6 +354,11 @@ section {
     display: none;
 }
 
+.tekst h2 {
+    border-bottom: 2px solid #545646;
+    ;
+}
+
 
 .img_wrap {
     position: relative;
@@ -366,12 +369,44 @@ section {
 
 .tekst_laptop {
     display: block;
+    margin: 1rem;
 }
 
+.tekst_laptop a {
+    font-size: 2rem;
+    border-bottom: 2px solid #545646;
+    ;
+}
+
+.tekst a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'lato';
+
+}
+
+.tekst nav a:visited {
+    color: #545646;
+}
+
+.tekst a:hover {
+    text-decoration: none;
+    color: #F7A152;
+}
+
+/*
 #portfolio {
     margin: 5rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+}
+*/
+
+#portfolio {
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    flex-wrap: wrap;
 }
 
 /*---- tema 2 ------ */
@@ -439,8 +474,6 @@ section {
 #tema_5 .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
-
-
 }
 
 #tema_5 .col {
@@ -563,7 +596,6 @@ img {
 #kontakt .col {
     flex-grow: 1;
     flex-basis: 200px;
-    margin: 50px;
     padding-left: 15px;
 }
 
@@ -582,6 +614,7 @@ img {
     text-decoration: none;
     color: #F7A152;
 }
+
 
 #kontakt .sectionwrapper {
     /*display: flex;*/
@@ -640,10 +673,10 @@ img {
     }
 }
 
-@media only screen and (min-width: 667px) {
-    portfolio {
-        display: flex;
-        flex-wrap: wrap;
+@media only screen and (min-width: 600px) {
+    #portfolio {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
 
     }
 }
